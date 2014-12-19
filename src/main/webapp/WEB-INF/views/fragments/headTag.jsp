@@ -8,25 +8,27 @@
 
     <spring:url value="/webjars/bootstrap/3.3.1/css/bootstrap.min.css" var="bootstrapCss"/>
     <link href="${bootstrapCss}" rel="stylesheet"/>
-
-	<spring:url value="/webjars/bootstrap/3.3.1/css/bootstrap-theme.min.css" var="bootstrapThemeCss"/>
-    <link href="${bootstrapThemeCss}" rel="stylesheet"/>
+        
+  <%--   icons --%>
+    <spring:url value="/resources/css/css/ionicons.css" var="ioniconCss"/>
+    <link href="${ioniconCss}" rel="stylesheet"/>
+   
+<%--       Theme Style --%>
+<%--     <spring:url value="/resources/css/css/AdminLTE.css" var="adminLTECss"/> --%>
+<%--     <link href="${adminLTECss}" rel="stylesheet"/> --%>
+    
+    <spring:url value="/resources/css/css/bootstrap3-wysihtml5.min.css" var="slideLTECss"/>
+    <link href="${slideLTECss}" rel="stylesheet"/>
+    
+    
+<%-- 	<spring:url value="/webjars/bootstrap/3.3.1/css/bootstrap-theme.min.css" var="bootstrapThemeCss"/> --%>
+<%--     <link href="${bootstrapThemeCss}" rel="stylesheet"/> --%>
 	
     <spring:url value="/resources/css/app.css" var="appCss"/>
     <link href="${appCss}" rel="stylesheet"/>
 
-     <spring:url value="/resources/css/css/font-awesome.css" var="fontCss"/>
-    <link href="${fontCss}" rel="stylesheet"/>
-    
-   
-    <!-- icons -->
-    <spring:url value="/resources/css/css/ionicons.css" var="ioniconCss"/>
-    <link href="${ioniconCss}" rel="stylesheet"/>
-   
-    <!-- Theme style -->
-    <spring:url value="/resources/css/css/AdminLTE.css" var="adminLTECss"/>
-    <link href="${adminLTECss}" rel="stylesheet"/>
-    
+<%--      <spring:url value="/resources/css/css/font-awesome.css" var="fontCss"/> --%>
+<%--     <link href="${fontCss}" rel="stylesheet"/> --%>
     
 </head>
 

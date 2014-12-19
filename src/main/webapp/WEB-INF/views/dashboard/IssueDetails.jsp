@@ -37,7 +37,6 @@
 		<datatables:column title="ECO" property="eco" />
 		<datatables:column title="ITEM" property="itemNo" />
 		<datatables:column title="ORG" property="orgCode" />
-
 	</datatables:table>
 </body>
 </html>

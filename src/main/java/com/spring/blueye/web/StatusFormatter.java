@@ -3,12 +3,9 @@ package com.spring.blueye.web;
 import java.text.ParseException;
 import java.util.Collection;
 import java.util.Locale;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.Formatter;
-
 import com.spring.blueye.model.Status;
-import com.spring.blueye.model.UserRole;
 import com.spring.blueye.service.CoreService;
 
 /**

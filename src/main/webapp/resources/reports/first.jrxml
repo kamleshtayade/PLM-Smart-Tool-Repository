@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperPrint xmlns="http://jasperreports.sourceforge.net/jasperreports/print" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/print http://jasperreports.sourceforge.net/xsd/jasperprint.xsd" name="Sample Report" pageWidth="595" pageHeight="842" topMargin="20" leftMargin="20" bottomMargin="20" rightMargin="20" locale="en_US" timezone="Asia/Calcutta">
+	<property name="net.sf.jasperreports.export.xml.start.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.end.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.page.count" value="1"/>
+	<origin band="background"/>
+	<origin band="title"/>
+	<origin band="pageHeader"/>
+	<origin band="columnHeader"/>
+	<origin band="detail"/>
+	<origin band="columnFooter"/>
+	<origin band="pageFooter"/>
+	<origin band="summary"/>
+	<page>
+		<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="ee67d29d-56bd-41ea-99bc-5d0cc8810094" x="58" y="32" width="410" height="20" origin="1" srcId="1" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[First Jasper Report]]></textContent>
+		</text>
+		<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="7c949aaa-7f46-4099-86a2-ad521545764c" x="48" y="136" width="100" height="20" origin="3" srcId="2" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[ID]]></textContent>
+		</text>
+		<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="8403bed5-6338-4a28-a203-4f04e935b6f6" x="148" y="136" width="100" height="20" origin="3" srcId="3" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Notified Record]]></textContent>
+		</text>
+		<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="268619b4-a394-425d-9b3b-e7720ffca2d6" x="248" y="136" width="100" height="20" origin="3" srcId="4" printId="1"/>
+			<font isBold="true"/>
+			<textContent><![CDATA[Failed Records]]></textContent>
+		</text>
+		<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Long">
+			<reportElement uuid="29e72046-b645-4d5b-9466-664b9e0ef70b" x="48" y="197" width="100" height="20" origin="4" srcId="5" printId="1"/>
+			<textContent><![CDATA[1]]></textContent>
+		</text>
+		<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Integer">
+			<reportElement uuid="d4c04a6f-5115-4f1e-b666-b2b2afc61b8d" x="158" y="197" width="100" height="20" origin="4" srcId="6" printId="1"/>
+			<textContent><![CDATA[10]]></textContent>
+		</text>
+		<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.lang.Integer">
+			<reportElement uuid="4bd4783a-8681-4598-96f5-eea92ccbed27" x="258" y="197" width="100" height="20" origin="4" srcId="7" printId="1"/>
+			<textContent><![CDATA[5]]></textContent>
+		</text>
+	</page>
+</jasperPrint>

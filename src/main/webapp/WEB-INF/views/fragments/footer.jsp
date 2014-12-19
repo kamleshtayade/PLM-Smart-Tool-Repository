@@ -16,3 +16,5 @@
 	var="bootstrap" />
 <script src="${bootstrap}"></script>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+

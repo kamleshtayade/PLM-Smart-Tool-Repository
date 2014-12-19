@@ -18,7 +18,6 @@
 </head>
 <body>
 	<div align="center">
-
 		<b>Issue ID::</b>&nbsp;
 		<c:forEach items="${causeSelections}" var="cause" varStatus="status">
 			<c:if test="${status.index == 0}">
@@ -38,6 +37,5 @@
 		<datatables:column title="Solution" property="solution" />
 
 	</datatables:table>
-
 </body>
 </html>

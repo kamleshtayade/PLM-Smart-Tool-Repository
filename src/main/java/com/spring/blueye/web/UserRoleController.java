@@ -20,8 +20,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
-
-import com.spring.blueye.model.User;
 import com.spring.blueye.model.UserRole;
 import com.spring.blueye.service.CoreService;
 
