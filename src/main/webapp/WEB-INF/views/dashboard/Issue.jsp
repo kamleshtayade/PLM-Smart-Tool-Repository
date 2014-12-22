@@ -14,8 +14,9 @@
 <jsp:include page="../fragments/headTag.jsp" />
 <jsp:include page="../fragments/bodyHeader.jsp" />
 
-  <!-- font Awesome -->
-        <link href="../css/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<!-- font Awesome -->
+<link href="../css/css/font-awesome.min.css" rel="stylesheet"
+	type="text/css" />
 <!-- Right side column. Contains the navbar and content of the page -->
 <aside class="right-side">
 	<!-- Content Header (Page header) -->
@@ -24,14 +25,14 @@
 			<spring:message code="issue" />
 			<small>place holder</small>
 		</h1>
-<%-- 		<div class="well well-sm pull-right btn-sm RbtnMargin"><%=date%></div> --%>
+		<%-- 		<div class="well well-sm pull-right btn-sm RbtnMargin"><%=date%></div> --%>
 		<ol class="breadcrumb">
 			<li class="active"><font color='blue'><b><%=date%></b></font></li>
 		</ol>
-		
+
 	</section>
-<%-- 	<jsp:include page="../fragments/detailsHeader.jsp" /> --%>
-	
+	<%-- 	<jsp:include page="../fragments/detailsHeader.jsp" /> --%>
+
 	<!-- Main content -->
 	<section class="content">
 
@@ -62,9 +63,10 @@
 				</div>
 				<a href="#">
 					<div class="panel-footer">
-						<span class="pull-left">
-						<a data-toggle="modal" data-target="#openIssue"> More info </a></span> <span class="pull-right">
-						<i class="glyphicon glyphicon-hand-right"></i></span>
+						<span class="pull-left"> <a data-toggle="modal"
+							data-target="#openIssue"> More info </a></span> <span class="pull-right">
+							<i class="glyphicon glyphicon-hand-right"></i>
+						</span>
 						<div class="clearfix"></div>
 					</div>
 				</a>
@@ -83,12 +85,13 @@
 								<h3>
 									<c:set var="counter1" value="0" />
 									<c:set var="abc" value="CLOSED" />
-									<c:forEach items="${plmDiagnose}" var="issue" varStatus="status">
-									<c:if test="${abc eq issue.itemStatus}">
-										<c:set var="counter1" value="${counter1 + 1}" />
+									<c:forEach items="${plmDiagnose}" var="issue"
+										varStatus="status">
+										<c:if test="${abc eq issue.itemStatus}">
+											<c:set var="counter1" value="${counter1 + 1}" />
 										</c:if>
 									</c:forEach>
-										<font color='green'><b><c:out value="${counter1}" /></b></font>
+									<font color='green'><b><c:out value="${counter1}" /></b></font>
 								</h3>
 							</div>
 							<div>Closed Issues</div>
@@ -97,9 +100,10 @@
 				</div>
 				<a href="#">
 					<div class="panel-footer">
-						<span class="pull-left">
-						<a data-toggle="modal" data-target="#closedIssue"> More info </a></span> <span class="pull-right">
-						<i class="glyphicon glyphicon-hand-right"></i></span>
+						<span class="pull-left"> <a data-toggle="modal"
+							data-target="#closedIssue"> More info </a></span> <span
+							class="pull-right"> <i
+							class="glyphicon glyphicon-hand-right"></i></span>
 						<div class="clearfix"></div>
 					</div>
 				</a>
@@ -111,20 +115,21 @@
 				<div class="panel-heading">
 					<div class="row">
 						<div class="col-xs-3">
-								<i class="glyphicon glyphicon-thumbs-up"></i>
-								
+							<i class="glyphicon glyphicon-thumbs-up"></i>
+
 						</div>
 						<div class="col-xs-9 text-right">
 							<div class="huge">
 								<h3>
 									<c:set var="counter1" value="0" />
 									<c:set var="abc" value="FIXED" />
-									<c:forEach items="${plmDiagnose}" var="issue" varStatus="status">
-									<c:if test="${abc eq issue.itemStatus}">
-										<c:set var="counter1" value="${counter1 + 1}" />
-									</c:if>
+									<c:forEach items="${plmDiagnose}" var="issue"
+										varStatus="status">
+										<c:if test="${abc eq issue.itemStatus}">
+											<c:set var="counter1" value="${counter1 + 1}" />
+										</c:if>
 									</c:forEach>
-										<font color='blue'><b><c:out value="${counter1}" /></b></font>
+									<font color='blue'><b><c:out value="${counter1}" /></b></font>
 								</h3>
 							</div>
 							<div>Fixed Issues</div>
@@ -133,9 +138,10 @@
 				</div>
 				<a href="#">
 					<div class="panel-footer">
-						<span class="pull-left">
-						<a data-toggle="modal" data-target="#FixedIssue"> More info </a></span> <span class="pull-right">
-						<i class="glyphicon glyphicon-hand-right"></i></span>
+						<span class="pull-left"> <a data-toggle="modal"
+							data-target="#FixedIssue"> More info </a></span> <span
+							class="pull-right"> <i
+							class="glyphicon glyphicon-hand-right"></i></span>
 						<div class="clearfix"></div>
 					</div>
 				</a>
@@ -147,7 +153,7 @@
 				<div class="panel-heading">
 					<div class="row">
 						<div class="col-xs-3">
-								<i class="glyphicon glyphicon-align-justify"></i>
+							<i class="glyphicon glyphicon-align-justify"></i>
 						</div>
 						<div class="col-xs-9 text-right">
 							<div class="huge">
@@ -157,7 +163,7 @@
 										varStatus="status">
 										<c:set var="counter1" value="${counter1 + 1}" />
 									</c:forEach>
-										<font color='white'><b><c:out value="${counter1}" /></b></font>
+									<font color='white'><b><c:out value="${counter1}" /></b></font>
 								</h3>
 							</div>
 							<div>Total Issues</div>
@@ -166,24 +172,27 @@
 				</div>
 				<a href="#">
 					<div class="panel-footer">
-						<span class="pull-left">
-						<a data-toggle="modal" data-target="#allIssue"> More info </a></span> <span class="pull-right">
-						<i class="glyphicon glyphicon-hand-right"></i></span>
+						<span class="pull-left"> <a data-toggle="modal"
+							data-target="#allIssue"> More info </a></span> <span class="pull-right">
+							<i class="glyphicon glyphicon-hand-right"></i>
+						</span>
 						<div class="clearfix"></div>
 					</div>
 				</a>
 			</div>
 		</div>
-<!-- 		For Open issue details -->
+		<!-- 		For Open issue details -->
 		<!-- Modal -->
 		<div class="modal fade" id="openIssue" tabindex="-1" role="dialog"
 			aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="panel panel-info">
-						<div class="panel-heading">Open Issue Details
-					<button type="button" class="btn btn-info pull-right btn-sm RbtnMargin " align='right' valign='top' data-dismiss="modal">x</button>
-				</div>
+						<div class="panel-heading">
+							<button type="button" class="close" data-dismiss="modal"
+								aria-hidden="true">&times;</button>
+							Open Issue Details
+						</div>
 						<div class="panel-body">
 							<table class="table table-striped table-bordered">
 								<tr>
@@ -211,23 +220,25 @@
 								</c:forEach>
 							</table>
 						</div>
-						</div>
-				</div>	
+					</div>
+				</div>
 				<!-- /.modal-content -->
 			</div>
 			<!-- /.modal-dialog -->
 		</div>
 		<!-- /.modal -->
-<!-- 		End here-- Open issue details -->
+		<!-- 		End here-- Open issue details -->
 
-<!-- For Closed issue details -->
+		<!-- For Closed issue details -->
 		<div class="modal fade" id="closedIssue" tabindex="-1" role="dialog"
 			aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="panel panel-info">
-						<div class="panel-heading">Open Issue Details
-						<button type="button" class="btn btn-info pull-right btn-sm RbtnMargin " align='right' valign='top' data-dismiss="modal">x</button>
+						<div class="panel-heading">
+							<button type="button" class="close" data-dismiss="modal"
+								aria-hidden="true">&times;</button>
+							Closed Issue Details
 						</div>
 						<div class="panel-body">
 							<table class="table table-striped table-bordered">
@@ -257,23 +268,25 @@
 							</table>
 						</div>
 					</div>
-					
+
 				</div>
 				<!-- /.modal-content -->
 			</div>
 			<!-- /.modal-dialog -->
 		</div>
 		<!-- /.modal -->
-<!-- 		End here--Closed issue details -->
+		<!-- 		End here--Closed issue details -->
 
-<!-- For Fixed issue details -->
+		<!-- For Fixed issue details -->
 		<div class="modal fade" id="FixedIssue" tabindex="-1" role="dialog"
 			aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="panel panel-info">
-						<div class="panel-heading">Open Issue Details
-						<button type="button" class="btn btn-info pull-right btn-sm RbtnMargin " align='right' valign='top' data-dismiss="modal">x</button>
+						<div class="panel-heading">
+							<button type="button" class="close" data-dismiss="modal"
+								aria-hidden="true">&times;</button>
+							Fixed Issue Details
 						</div>
 						<div class="panel-body">
 							<table class="table table-striped table-bordered">
@@ -303,23 +316,25 @@
 							</table>
 						</div>
 					</div>
-					
+
 				</div>
 				<!-- /.modal-content -->
 			</div>
 			<!-- /.modal-dialog -->
 		</div>
 		<!-- /.modal -->
-<!-- 		End here--Fixed issue details -->
+		<!-- 		End here--Fixed issue details -->
 
-<!-- For Fixed issue details -->
+		<!-- For Fixed issue details -->
 		<div class="modal fade" id="allIssue" tabindex="-1" role="dialog"
 			aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="panel panel-info">
-						<div class="panel-heading">Open Issue Details
-						<button type="button" class="btn btn-info pull-right btn-sm RbtnMargin " align='right' valign='top' data-dismiss="modal">x</button>
+						<div class="panel-heading">
+							<button type="button" class="close" data-dismiss="modal"
+								aria-hidden="true">&times;</button>
+							All Issue Details
 						</div>
 						<div class="panel-body">
 							<table class="table table-striped table-bordered">
@@ -333,15 +348,15 @@
 									<td><b><c:out value="Last Update Date" /></b></td>
 								</tr>
 								<c:forEach items="${plmDiagnose}" var="issue" varStatus="status">
-										<tr>
-											<td><c:out value="${issue.id}" /></td>
-											<td><c:out value="${issue.orgCode}" /></td>
-											<td><c:out value="${issue.eco}" /></td>
-											<td><c:out value="${issue.itemNo}" /></td>
-											<td><c:out value="${issue.itemStatus}" /></td>
-											<td><c:out value="${issue.errorType}" /></td>
-											<td><c:out value="${issue.lastUpdateDate}" /></td>
-										</tr>
+									<tr>
+										<td><c:out value="${issue.id}" /></td>
+										<td><c:out value="${issue.orgCode}" /></td>
+										<td><c:out value="${issue.eco}" /></td>
+										<td><c:out value="${issue.itemNo}" /></td>
+										<td><c:out value="${issue.itemStatus}" /></td>
+										<td><c:out value="${issue.errorType}" /></td>
+										<td><c:out value="${issue.lastUpdateDate}" /></td>
+									</tr>
 								</c:forEach>
 							</table>
 						</div>
@@ -352,17 +367,17 @@
 			<!-- /.modal-dialog -->
 		</div>
 		<!-- /.modal -->
-<!-- 		End here--Fixed issue details -->
+		<!-- 		End here--Fixed issue details -->
 	</section>
-	
-	
+
+
 	<section class="content">
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="box">
 					<datatables:table id="plmDiagnosesis" data="${plmDiagnose}"
 						row="issueDetails" theme="bootstrap3"
-						cssClass="table table-striped bordered" pageable="true"
+						cssClass="table table-striped table-bordered table-hover" pageable="true"
 						paginationType="listBox" info="true" export="xls,pdf"
 						ext="bootstrap3-responsive">
 
@@ -382,34 +397,53 @@
 						<datatables:column title="Program" property="errorType"
 							data-hide="phone,tablet" />
 						<datatables:column title="Error">
-						<c:set var="str" value="${issueDetails.errorMessage}" />
-						<c:if test="${not empty str}">
-							<div>
-								<ul class="nav navbar-nav">
-									<li><a href="#" class="dropdown-toggle"
-										data-toggle="dropdown"></i> 
-										<font color='green'><i class="glyphicon glyphicon-new-window"></i></font></a>
-										<ul class="dropdown-menu">
-											<!-- User image -->
-											<p>
+							<c:set var="str" value="${issueDetails.errorMessage}" />
+							<c:if test="${not empty str}">
+
+
+								<div>
+									<ul class="nav navbar-nav">
+										<!-- User Account: style can be found in dropdown.less -->
+										<li class="dropdown user user-menu"><a href="#"
+											class="dropdown-toggle" data-toggle="dropdown"> 
+											<font color='green'>
+											<i class="glyphicon glyphicon-new-window"></i></font>
+										</a>
+											<ul class="dropdown-menu">
+												<!-- User image -->
+												<li class="user-header bg-light-pink">
 												<c:out value="${issueDetails.errorMessage}" />
-											</p>
-										</ul></li>
-								</ul>
-							</div>
+												</li>
+											</ul></li>
+									</ul>
+								</div>
+								
+								
+<!-- 								<div> -->
+<!-- 									<ul class="nav navbar-nav"> -->
+<!-- 										<li><a href="#" class="dropdown-toggle" -->
+<!-- 											data-toggle="dropdown"></i> <font color='green'><i -->
+<!-- 													class="glyphicon glyphicon-new-window"></i></font></a> -->
+<!-- 											<ul class="dropdown-menu"> -->
+<!-- 												User image -->
+<!-- 												<p> -->
+<%-- 													<c:out value="${issueDetails.errorMessage}" /> --%>
+<!-- 												</p> -->
+<!-- 											</ul></li> -->
+<!-- 									</ul> -->
+<!-- 								</div> -->
 							</c:if>
 							<c:if test="${empty str}">
 								<div align='center'>
-								<ul class="nav navbar-nav">
-									<li>
-									<a href=""></i> <i
-											class="glyphicon glyphicon-new-window"></i></a>
-										<ul class="dropdown-menu">
-											<!-- User image -->
-												<c:out value="${issueDetails.errorMessage}" />											
-										</ul></li>
-								</ul>
-							</div>
+									<ul class="nav navbar-nav">
+										<li><a href=""></i> <i
+												class="glyphicon glyphicon-new-window"></i></a>
+											<ul class="dropdown-menu">
+												<!-- User image -->
+												<c:out value="${issueDetails.errorMessage}" />
+											</ul></li>
+									</ul>
+								</div>
 							</c:if>
 						</datatables:column>
 						<datatables:column title="Org Id" property="orgCode"
@@ -426,4 +460,4 @@
 	</section>
 	<jsp:include page="../fragments/footer.jsp" />
 </aside>
-</html>
+
