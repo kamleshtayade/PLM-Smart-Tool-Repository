@@ -170,6 +170,26 @@
 				</a>
 			</div>
 		</div>
+		
+		
+		<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Basic Modal</h4>
+          </div>
+          <div class="modal-body">
+            <h3>Modal Body</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 <!-- 		For Open issue details -->
 		<!-- Modal -->
 		<div class="modal fade" id="openIssue" tabindex="-1" role="dialog"
@@ -177,8 +197,10 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="panel panel-info">
-						<div class="panel-heading">Open Issue Details
-						<button type="button" class="btn btn-info pull-right btn-sm RbtnMargin " align='right' valign='top' data-dismiss="modal">x</button>
+						<div class="panel-heading">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						Open Issue Details
+<!-- 						<button type="button" class="btn btn-info pull-right btn-sm RbtnMargin " align='right' valign='top' data-dismiss="modal">x</button> -->
 						</div>
 						<div class="panel-body">
 							<table class="table table-striped table-bordered">
@@ -261,6 +283,7 @@
 			<!-- /.modal-dialog -->
 		</div>
 		<!-- /.modal -->
+		</section>
 <!-- 		End here--Closed issue details -->
 
 	<!-- Main content -->
@@ -273,12 +296,12 @@
 					<!-- /.box -->
 					<datatables:table id="plmSmart" data="${plmSelections}"
 						row="plmSmart" theme="bootstrap3"
-						cssClass="table table-striped bordered" pageable="true"
+						cssClass="table table-striped table-bordered table-hover table-condensed" pageable="true"
 						paginationType="listBox" info="true" export="xls,pdf"
-						ext="bootstrap3-responsive">
-						<datatables:column title="Program" property="programType"
-							data-class="expand" />
-						<datatables:column title="Processed" property="processedRecords" />
+						>
+						
+						<datatables:column title="Program" property="programType" data-class="expand" />
+						<datatables:column title="Processed" property="processedRecords" data-hide="Failed,Notified" />
 						<datatables:column title="Failed" display="html">
 							<spring:url value="../dashboard/{id}.html" var="idUrl"
 								htmlEscape="true">
@@ -296,8 +319,7 @@
 								<c:out value="${plmSmart.failedRecords}" />
 							</c:if>
 						</datatables:column>
-						<datatables:column title="Notified" property="notifiedRecords"
-							data-hide="phone,tablet" />
+						<datatables:column title="Notified" property="notifiedRecords"/>
 					</datatables:table>
 				</div>
 				<!-- /.box -->
@@ -345,6 +367,17 @@
 		</div>
 		<!-- /.modal -->
 	</section>
+	<section>
+	
+	<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+	.............<a href="#" class="tooltip">Tooltip
+    <span>
+        
+        <strong>Most Light-weight Tooltip</strong><br />
+        This is the easy-to-use Tooltip driven purely by CSS.
+    </span>
+</a>
+</section>
 	<jsp:include page="../fragments/footer.jsp" />
 </aside>
 
